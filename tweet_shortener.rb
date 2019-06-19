@@ -3,6 +3,7 @@ def dictionary
 end
 
 def word_substituter
+  dictionary
   
 end
 
@@ -14,4 +15,6 @@ def selective_tweet_shortener
   
 end
 
-def
+def shortened_tweet_truncator
+  
+end
