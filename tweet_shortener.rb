@@ -21,7 +21,7 @@ def word_substituter(tweet)
       tweet.gsub("#{word}", "#{replacement}")
     end 
   end
-  tweet.flatten
+  tweet.join(" ")
 end
 
 def bulk_tweet_shortener
