@@ -18,9 +18,10 @@ def word_substituter(tweet)
   tweet = tweet.split
   dictionary.each do |word, replacement|
     if tweet.include?(word)
-      
+      tweet.gsub("#{word}", "#{replacement}")
     end 
   end
+  tweet.flatten
 end
 
 def bulk_tweet_shortener
