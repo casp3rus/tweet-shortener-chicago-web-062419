@@ -5,6 +5,8 @@ end
 def word_substituter(tweet_one)
   dictionary
   
+  tweet_one.
+  
 end
 
 def bulk_tweet_shortener
