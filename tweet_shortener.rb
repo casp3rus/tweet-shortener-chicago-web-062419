@@ -5,7 +5,7 @@ end
 def word_substituter(tweet_one)
   dictionary
   
-  tweet_one.
+  tweet = tweet_one.split
   
 end
 
