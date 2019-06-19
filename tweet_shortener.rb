@@ -15,14 +15,14 @@ end
 
 def word_substituter(tweet)
   dictionary
-  tweet = tweet.split
-  dictionary.each do |word, replacement|
-    if tweet.include?(word)
-      tweet.gsub?("#{word}", "#{replacement}")
-      end
-    end 
-  end
-  tweet.join(" ")
+  tweet.split.collect do |word|
+    if dictionary.keys.include?(word.downcase)
+      word = dictionary[word.downcase]
+    else
+      word
+    end
+  end.join(" ")
+
 end
 
 def bulk_tweet_shortener
