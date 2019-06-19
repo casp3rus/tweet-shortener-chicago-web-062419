@@ -18,7 +18,7 @@ def word_substituter(tweet)
   tweet = tweet.split
   dictionary.each do |word, replacement|
     if tweet.include?(word)
-      tweet.gsub("#{word}", "#{replacement}")
+      tweet.gsub?("#{word}", "#{replacement}")
     end 
   end
   tweet.join(" ")
