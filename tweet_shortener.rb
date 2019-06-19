@@ -15,13 +15,13 @@ end
 
 def word_substituter(tweet)
   dictionary
-  tweet.split.collect do |word|
-    if dictionary.keys.include?(word.downcase)
-      word = dictionary[word.downcase]
-    else
-      word
-    end
-  end.join(" ")
+#   tweet = tweet.dup
+# #   dictionary.each do |word, replacement|
+# #     if tweet.include?(word)
+# #       tweet.gsub!(/\b#{word}\b/i, replacement)
+# #     end
+# #   end
+# #   tweet
 
 end
 
