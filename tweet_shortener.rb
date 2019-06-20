@@ -24,8 +24,10 @@ def word_substituter(tweet)
   tweet
 end
 
-def bulk_tweet_shortener
-  
+def bulk_tweet_shortener(tweets)
+  tweets.each do |tweet|
+    puts word_substituter(tweet)
+  end
 end
 
 def selective_tweet_shortener(tweet)
